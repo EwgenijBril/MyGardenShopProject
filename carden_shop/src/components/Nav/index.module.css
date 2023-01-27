@@ -1,0 +1,52 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+    gap: 60px;
+}
+
+.header button {
+    border: 2px solid #339933;
+    background-color: #339933;
+    border-radius: 5px;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    width: 129px;
+    height: 49px;
+}
+
+.nav_menu {
+    margin: 44px;
+    display: flex;
+    justify-content: space-between;
+    gap: 57px;
+    align-items: center;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 800; 
+}
+
+.nav_menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_menu a:hover {
+    color: #339933;
+}
+
+.cart {
+    
+}
+
+
