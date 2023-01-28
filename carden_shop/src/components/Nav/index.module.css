@@ -23,10 +23,10 @@
     color: #FFFFFF;
     width: 129px;
     height: 49px;
+    
 }
 
 .nav_menu {
-    margin: 44px;
     display: flex;
     justify-content: space-between;
     gap: 57px;
@@ -43,6 +43,10 @@
 
 .nav_menu a:hover {
     color: #339933;
+}
+
+.cart {
+   margin: 0;
 }
 
 
