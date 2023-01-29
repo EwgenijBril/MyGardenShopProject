@@ -23,7 +23,6 @@
     color: #FFFFFF;
     width: 129px;
     height: 49px;
-    
 }
 
 .nav_menu {
@@ -46,7 +45,7 @@
 }
 
 .cart {
-   margin: 0;
+    margin: 0 25px;
 }
 
 
