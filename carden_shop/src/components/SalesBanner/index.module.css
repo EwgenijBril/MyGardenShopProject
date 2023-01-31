@@ -1,37 +1,37 @@
 .section {
+    background-color: #A1E2EB;
+}
+
+.section_container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    width: 1440px;
     height: 600px;
-    background-color:#A1E2EB;
-    position: relative;
+    margin: auto;
+    position: relative; 
 }
 
 .left_block {
     margin: 130px 25px;  
+     
 }
 
-.left_block h2 {
+.left_block h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
     color: white;
 }
 
-.left_block h3 {
+.left_block h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 63px;
     color: white;
 }
 
-.btn_block {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center; 
-    gap: 10px;
-    position: absolute;
-    margin: 379px 25px;
+.left_block button {
+    margin: 100px 25px 10px 0;
 }
 
 .left_btn {
@@ -42,8 +42,7 @@
     height: 82px;
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
-    
+    font-size: 25px;  
 }
 
 .right_btn {
@@ -63,6 +62,4 @@
     position: absolute;
     right: 0px;
     bottom: 10px;
-    width: 750px;
-    height: 679px; 
 }

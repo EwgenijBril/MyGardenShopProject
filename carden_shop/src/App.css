@@ -3,13 +3,3 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-.wrapper {
-    margin: auto;
-    width: 1440px;
-}
-
-main {
-    margin: auto;
-    max-height: auto;
-}

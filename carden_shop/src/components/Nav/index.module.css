@@ -1,8 +1,13 @@
+.nav_section{
+    height: 167px;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
     width: 1440px;
     margin: auto;
+    
 }
 
 .header {

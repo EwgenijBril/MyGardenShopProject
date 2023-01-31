@@ -1,7 +1,5 @@
-.section h2 {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px;
-    margin: 25px; 
+.section {
+    height: 600px;
 }
+
 

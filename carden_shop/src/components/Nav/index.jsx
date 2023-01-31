@@ -7,19 +7,21 @@ import s from './index.module.css'
 export default function Nav() {
 
   return (
-    <nav className={s.nav}>
-      <header className={s.header}>
-        <img src={logo} alt='logo' />
-        <button>Catalog</button>
-      </header>
+    <section className={s.nav_section}>
+      <nav className={s.nav}>
+        <header className={s.header}>
+          <img src={logo} alt='logo' />
+          <button>Catalog</button>
+        </header>
 
-      <div className={s.nav_menu}>
-        <Link to='/'>categories</Link>
-        <Link>coupon</Link>
-        <Link>promotions</Link>
-        <Link>constacts</Link>
-        <ShoppingOutlined className={s.cart} />
-      </div>
-    </nav>
+        <div className={s.nav_menu}>
+          <Link to='/'>categories</Link>
+          <Link>coupon</Link>
+          <Link>promotions</Link>
+          <Link>constacts</Link>
+          <ShoppingOutlined className={s.cart} />
+        </div>
+      </nav>
+    </section>
   )
 }

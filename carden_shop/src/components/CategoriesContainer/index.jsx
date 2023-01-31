@@ -14,10 +14,15 @@ export default function CategoriesContainer() {
   }, [])
 
   return (
-    <div className={s.container}>
+    <div className={s.categories_container}>
+      <h2>Categories</h2>
+      <div className={s.container}>
       {
-        categories.map(el => <CategoryCard key={el.id} {...el}/>)
+        categories
+        .slice(0, -1)
+        .map(el => <CategoryCard key={el.id} {...el}/>)
       }
+      </div>
     </div>
   )
 }

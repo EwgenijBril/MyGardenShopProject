@@ -1,0 +1,12 @@
+.section {
+    background-color: #339933;
+    height: 476px;
+}
+
+.section_container {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: auto;
+
+}
