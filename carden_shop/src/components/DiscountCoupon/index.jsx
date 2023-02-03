@@ -4,20 +4,16 @@ import s from './index.module.css'
 
 export default function DiscountCoupon() {
   return (
-    <section className={s.section}>
-        <div className={s.section_container}>
-            <div>
-                <img src={ discountImg } alt="discountImg" />
-            </div>
-
-            <form>
-                <h2>Sale 5%</h2>
-                <h3>for first ordner</h3>
-                <input type="number" placeholder='+49' />
-                <button>Get coupon</button>
-            </form>
-        </div>
-        
+    <section className={s.section_coupon}>
+      <img src={ discountImg } alt="discountImg" />
+        <form className={s.container_form}>
+          <div>
+              <h2>Sale 5%</h2>
+              <h3>for first ordner</h3>
+          </div>
+          <input type="number" placeholder='+49' />
+          <button>Get coupon</button>
+          </form>
     </section>
   )
 }

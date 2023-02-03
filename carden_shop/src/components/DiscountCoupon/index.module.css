@@ -1,12 +1,60 @@
-.section {
+.section_coupon{
     background-color: #339933;
     height: 476px;
-}
-
-.section_container {
     display: flex;
     justify-content: space-between;
-    width: 1440px;
-    margin: auto;
+}
 
+.section_coupon img {
+    width: 472px;
+    height: 472px;
+    padding: 27px 10px 27px 91px;
+}
+
+.container_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.container_form h2 {
+    margin: 44px 258px 0 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    color: white;
+}
+
+.container_form h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    color: white;
+}
+
+.container_form input {
+    border: 1px solid transparent;
+    width: 473px;
+    height: 75px;
+    border-radius: 25px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.container_form button {
+    border: 1px solid white;
+    background-color: #339933;
+    color: white;
+    width: 473px;
+    height: 75px;
+    border-radius: 25px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
 }

@@ -5,12 +5,14 @@ import SalesBanner from '../../components/SalesBanner'
 
 
 
+
 export default function HomePage() {
   return (
     <div>
       <SalesBanner/>
       <CategoriesSection/>
       <DiscountCoupon/>
+     
     </div>
   )
 }
