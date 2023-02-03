@@ -13,25 +13,10 @@ export default function SalesProductsContainer() {
         dispatch(load_products)
     }, [])
 
-    // const getRandomNumbers = (arr) => {
-    //   let result = [];
-    //   let randomIndex;
-    //   while (result.length < 3) {
-    //     randomIndex = Math.floor(Math.random() * arr.length);
-    //     if (!result.includes(arr[randomIndex])) {
-    //       result.push(arr[randomIndex]);
-    //     }
-    //   }
-    //   return result;
-    // };
-
-    // let random = getRandomNumbers(products)
-
   return (
     <div className={s.products_container}>
         {
-            products
-            .map(el => <SaleProductCard  key={el.id} {...el}  /> )
+          products.map(el => <SaleProductCard  key={el.id} {...el}  /> )
         }
     </div> 
   )

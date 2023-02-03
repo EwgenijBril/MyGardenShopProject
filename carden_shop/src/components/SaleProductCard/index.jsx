@@ -6,9 +6,11 @@ export default function SaleProductCard({ id, title, price, discont_price, descr
   return (
     <div className={s.product_card}>
         <img src={`http://localhost:3333${image}`} alt={ title } />
-        <p>{ price }$</p>
-        <p>-{ discont_price }%</p>
-        <p>{ title }</p>
+        <div className={s.price_block}>
+          <p className={s.price}>{ price }$</p>
+          <p className={s.discont_price}>-{ discont_price }%</p>
+        </div>
+        <p className={s.title}>{ title }</p>
     </div>
   )
 }

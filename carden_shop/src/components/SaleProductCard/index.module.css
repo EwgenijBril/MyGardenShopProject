@@ -1,5 +1,31 @@
-.product_card {
+.product_card  img {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    border-radius: 25px;
+}
+
+.price_block {
+    display: flex;
+    justify-content: center;
+    gap: 88px;
+    align-items: center;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.discont_price {
+    font-weight: 600;
+    font-size: 20px;
+    color: #FF32A1;
+}
+
+.title {
+    margin: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
 }

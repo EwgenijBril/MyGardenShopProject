@@ -1,13 +1,15 @@
 const defaultState = [];
 
-const LOAD_PRODUCTS = 'LOAD_PRODUCTS';
+const LOAD_RANDOM_PRODUCTS = 'LOAD_RANDOM_PRODUCTS';
 
-export const loadProducts = payload => ({type: LOAD_PRODUCTS, payload});
 
+export const loadRandomProducts = payload => ({ type: LOAD_RANDOM_PRODUCTS, payload: payload.sort(() => 0.5 - Math.random()).slice(0, 3) });
+
+export const loadProducts = payload => ({ type: LOAD_RANDOM_PRODUCTS, payload })
 
 
 export const productsReducer = (state = defaultState, action) => {
-    if ( action.type === LOAD_PRODUCTS ) {
+    if ( action.type === LOAD_RANDOM_PRODUCTS ) {
         return action.payload 
     } else {
       return state

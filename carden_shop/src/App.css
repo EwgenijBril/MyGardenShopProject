@@ -9,3 +9,7 @@
     margin: 0 auto;
     width: 1440px;
 }
+
+main {
+    min-height: auto;
+}
