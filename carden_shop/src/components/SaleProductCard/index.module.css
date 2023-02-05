@@ -2,14 +2,22 @@
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .price_block {
     display: flex;
     justify-content: center;
-    gap: 88px;
+    gap: 44px;
     align-items: center;
+}
+
+.discont_price {
+    font-weight: 600;
+    font-size: 20px;
+    color: gray;
+    text-decoration: line-through;
+    
 }
 
 .price {
@@ -17,9 +25,8 @@
     font-size: 30px;
 }
 
-.discont_price {
-    font-weight: 600;
-    font-size: 20px;
+
+.discont {
     color: #FF32A1;
 }
 

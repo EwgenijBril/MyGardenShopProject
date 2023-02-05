@@ -10,15 +10,15 @@ export default function Nav() {
     <section className={s.nav_section}>
       <nav className={s.nav}>
         <header className={s.header}>
-          <img src={logo} alt='logo' />
+          <Link to='/'><img src={logo} alt='logo' /></Link>
           <button>Catalog</button>
         </header>
 
         <div className={s.nav_menu}>
-          <Link to='/'>categories</Link>
-          <Link>coupon</Link>
-          <Link>promotions</Link>
-          <Link>constacts</Link>
+          <Link to='categories'>Categories</Link>
+          <Link>Coupon</Link>
+          <Link to='products'>Sale</Link>
+          <Link>Constacts</Link>
           <ShoppingOutlined className={s.cart} />
         </div>
       </nav>

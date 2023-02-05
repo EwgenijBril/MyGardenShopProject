@@ -2,7 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import CategoriesPage from './pages/CategoriesPage'
-import ProductsPage from './pages/ProductsPage'
+import SaleProductsPage from './pages/SaleProductsPage'
 import ProductDescrPage from './pages/ProductDescrPage'
 import CartPage from './pages/CartPage'
 import Layout from './components/Layout';
@@ -14,10 +14,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout/>}>
           <Route index element={<HomePage/>} />
-          <Route path='/categories' element={<CategoriesPage/>} />
-          <Route path='/category' element={<ProductsPage/>} />
-          <Route path='/product/:id' element={<ProductDescrPage/>} />
-          <Route path='/cart' element={<CartPage/>} />
+          <Route path='categories' element={<CategoriesPage/>} />
+          <Route path='products' element={<SaleProductsPage/>} />
+          <Route path='product/:id' element={<ProductDescrPage/>} />
+          <Route path='cart' element={<CartPage/>} />
         </Route>
       </Routes>
     </div>
