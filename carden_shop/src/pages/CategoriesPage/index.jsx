@@ -15,12 +15,12 @@ export default function CategoriesPage() {
 
   return (
     <div className={s.categories_page}>
-      <h1>Categories</h1>
-      <div className={s.categories_cards}>
-      {
-        categories.map(el => <CategoryCard key={el.id} {...el}/>)
-      }
-    </div>
+        <h1>Categories</h1>
+        <div className={s.categories_cards}>
+        {
+          categories.map(el => <CategoryCard key={el.id} {...el}/>)
+        }
+      </div>
     </div> 
   )
 }

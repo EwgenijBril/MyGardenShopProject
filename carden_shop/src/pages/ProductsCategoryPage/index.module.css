@@ -1,0 +1,7 @@
+.products_category_page {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr );
+    gap: 33px;
+    row-gap: 80px;
+    margin: 0 0 100px 25px;
+}

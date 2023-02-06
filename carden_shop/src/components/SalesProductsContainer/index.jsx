@@ -17,7 +17,8 @@ export default function SalesProductsContainer() {
     <div className={s.products_container}>
         {
           products
-          .sort(() => 0.5 - Math.random()).slice(0, 3)
+          .sort(() => 0.5 - Math.random())
+          .slice(0, 3)
           .map(el => <SaleProductCard  key={el.id} {...el} /> )
         }
     </div> 
