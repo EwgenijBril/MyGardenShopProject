@@ -19,7 +19,10 @@ export default function Nav() {
           <Link>Coupon</Link>
           <Link to='products'>Sale</Link>
           <Link>Constacts</Link>
-          <ShoppingOutlined className={s.cart} />
+          <Link to='cart'>
+            <ShoppingOutlined className={s.cart} />
+          </Link>
+          
         </div>
       </nav>
     </section>

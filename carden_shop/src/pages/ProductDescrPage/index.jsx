@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { load_product } from '../../requests/product_item'
 import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
+import { addToCard } from '../../store/reducers/cart'
 import s from './index.module.css'
 
 export default function ProductDescrPage() {
@@ -18,6 +19,8 @@ export default function ProductDescrPage() {
 
   const { title, description, price, image, discont_price } = product
 
+  const add_to_card = () => dispatch(addToCard({id: +id, title, image, discont_price, price}))
+
   return (
     <div className={s.product_descr_page}>
       <div className={s.left_block}>
@@ -30,7 +33,7 @@ export default function ProductDescrPage() {
           <p className={s.price}>{ price }$</p>
           <p className={s.discont}>-7%</p>
         </div>
-        <button>Add to cart</button>
+        <button onClick={add_to_card}>Add to cart</button>
         <div className={s.description_block}>
           <h3>Description</h3>
           <p>{ description }</p>
