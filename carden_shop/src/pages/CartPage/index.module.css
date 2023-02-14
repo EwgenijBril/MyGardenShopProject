@@ -28,7 +28,7 @@
     
 }
 
-.titels {
+.titel {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -36,14 +36,30 @@
     gap: 50px;
 }
 
-.titels h3 {
+.titel h3 {
     font-weight: 600;
     font-size: 28px;
 }
 
-.titels p {
+.totals_count {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+
+.totals_count h4 {
     font-weight: 500;
     font-size: 24px;
+}
+
+.totals_count p {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.totals_count span {
+    font-size: 50px;
+    margin-left: 50px;
 }
 
 .letest_block {

@@ -9,6 +9,8 @@ export default function CartPage() {
 
   const cart = useSelector(state => state.cart)
 
+  const total = cart.reduce((prev, {discont_price, count}) => prev + discont_price * count, 0 )
+
   return (
     <div className={s.cart_page} >
       <div className={s.title_block}>
@@ -22,9 +24,13 @@ export default function CartPage() {
         }
         </div>
         <div className={s.left_block}>
-          <div className={s.titels}>
+          <div className={s.titel}>
             <h3>Order details</h3>
-            <p>Total</p>
+            <div className={s.totals_count}>
+              <h4>Total:</h4> 
+              <p>{total}$</p>
+            </div>
+            
           </div>
           <div className={s.letest_block}>
             <input type="number" placeholder='Phone number'/>

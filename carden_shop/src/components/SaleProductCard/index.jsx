@@ -11,6 +11,8 @@ export default function SaleProductCard({ id, title, price, discont_price, descr
 
   const add_to_card = () => dispatch(addToCard({id, image, title, discont_price, price}))
 
+  const discont = Math.round((price - discont_price) / price * 100)
+
   return (
     <div className={s.product_card}>
         <div className={s.product_card_block}>
@@ -20,7 +22,7 @@ export default function SaleProductCard({ id, title, price, discont_price, descr
         <div className={s.price_block}>
           <p className={s.discont_price}>{ discont_price }$</p>
           <p className={s.price}>{ price }$</p>
-          <p className={s.discont}>-7%</p>
+          <p className={s.discont}>{discont}%</p>
         </div>
         <p className={s.title}>{ title }</p>
     </div>

@@ -21,6 +21,8 @@ export default function ProductDescrPage() {
 
   const add_to_card = () => dispatch(addToCard({id: +id, title, image, discont_price, price}))
 
+  const discont = Math.round((price - discont_price) / price * 100)
+
   return (
     <div className={s.product_descr_page}>
       <div className={s.left_block}>
@@ -31,7 +33,7 @@ export default function ProductDescrPage() {
         <div className={s.price_block}>
           <p>{ discont_price }$</p>
           <p className={s.price}>{ price }$</p>
-          <p className={s.discont}>-7%</p>
+          <p className={s.discont}>{ discont }%</p>
         </div>
         <button onClick={add_to_card}>Add to cart</button>
         <div className={s.description_block}>
