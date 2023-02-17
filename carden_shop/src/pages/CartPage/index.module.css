@@ -44,7 +44,8 @@
 .totals_count {
     display: flex;
     flex-direction: row;
-    gap: 300px;
+    align-items: baseline;
+    gap: 50px;
 }
 
 .totals_count h4 {
@@ -55,11 +56,6 @@
 .totals_count p {
     font-weight: 600;
     font-size: 32px;
-}
-
-.totals_count span {
-    font-size: 50px;
-    margin-left: 50px;
 }
 
 .letest_block {

@@ -30,7 +30,6 @@ export default function CartPage() {
               <h4>Total:</h4> 
               <p>{total}$</p>
             </div>
-            
           </div>
           <div className={s.letest_block}>
             <input type="number" placeholder='Phone number'/>
