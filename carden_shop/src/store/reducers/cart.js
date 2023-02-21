@@ -4,11 +4,13 @@ const ADD_TO_CART = 'ADD_TO_CART';
 const INCREMENT_COUNT = 'INCREMENT_COUNT'
 const DECREMENT_COUNT = 'DECREMENT_COUNT'
 const DELETE_CARD = 'DELETE_CARD'
+const LOCAL_STORE_CARD = 'LOCAL_STORE_CARD'
 
 export const addToCard = payload => ({type: ADD_TO_CART, payload});
 export const incrementCount = payload => ({type: INCREMENT_COUNT, payload});
 export const decrementCount = payload => ({type: DECREMENT_COUNT, payload});
-export const deleteCard = payload => ({type: DELETE_CARD, payload})
+export const deleteCard = payload => ({type: DELETE_CARD, payload});
+export const localStoreCard = payload => ({type: LOCAL_STORE_CARD, payload});
 
 const checkProduct = ( state, payload ) => {
     const productInState = state.find( el => el.id === payload.id );
@@ -37,11 +39,16 @@ export const cartReducer = ( state = defaultState, action ) => {
         : target_card.count--
         
         return [...state]
-    } else if ( action.type === DELETE_CARD) {
+    } else if ( action.type === DELETE_CARD ) {
         state.find(el => el.id !== action.payload)
         return state.filter( el => el.id !== action.payload )
+    } else if ( action.type === LOCAL_STORE_CARD ) {
+        const defaultState = action.payload
+        return [...defaultState]
     } else {
         return state
     }
 }
+
+
  
