@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useForm } from "react-hook-form";
 import CartCard from "../../components/CartCard";
 import s from "./index.module.css";
 
@@ -10,6 +11,28 @@ export default function CartPage() {
     (prev, { discont_price, count }) => prev + discont_price * count,
     0
   );
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
+    mode: "onBlur",
+  });
+
+  const submit = (data) => {
+    console.log(data, total);
+    reset();
+  };
+
+  const phoneRegister = register("phone", {
+    required: "* Mandatory field",
+    pattern: {
+      value: /^\+49\d{11}$/,
+      message: "* Not valid phone-forman",
+    },
+  });
 
   return (
     <div className={s.cart_page}>
@@ -23,7 +46,8 @@ export default function CartPage() {
             <CartCard key={el.id} {...el} />
           ))}
         </div>
-        <div className={s.left_block}>
+
+        <form className={s.left_block} onSubmit={handleSubmit(submit)}>
           <div className={s.titel}>
             <h3>Order details</h3>
             <div className={s.totals_count}>
@@ -32,10 +56,16 @@ export default function CartPage() {
             </div>
           </div>
           <div className={s.letest_block}>
-            <input type="nummber" placeholder="Phone number" />
+            <input
+              type="nummber"
+              name="phone"
+              placeholder="+49"
+              {...phoneRegister}
+            />
             <button>order</button>
+            {errors.phone && <p>{errors.phone?.message}</p>}
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );

@@ -22,7 +22,9 @@ export default function Nav() {
             Coupon
           </HashLink>
           <Link to="products">Sale</Link>
-          <Link>Constacts</Link>
+          <HashLink smooth to="#contacts">
+            Contacts
+          </HashLink>
           <Link to="cart">
             <ShoppingOutlined className={s.cart} />
           </Link>
