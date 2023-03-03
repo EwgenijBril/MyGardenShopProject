@@ -1,16 +1,16 @@
 .section {
-    background-color: #A1E2EB;
+    background-color: #339933;
 }
 
 .section_container {
     display: flex;
     flex-direction: row;
     height: 600px;
-    position: relative; 
 }
 
 .left_block {
-    margin: 130px 25px;   
+    margin: 130px 25px;
+    width: 720px;   
 }
 
 .left_block h1 {
@@ -43,7 +43,7 @@
 }
 
 .right_btn {
-    background-color: #A1E2EB;
+    background-color: #339933;
     color: white;
     border: 2px solid white;
     border-radius: 13px;
@@ -56,7 +56,6 @@
 
 .right_block img {
     object-fit: cover;
-    position: absolute;
-    right: 0px;
-    bottom: 10px;
+    width: 720px;
+    height: 100%;
 }
