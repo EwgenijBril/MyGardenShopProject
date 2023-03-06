@@ -25,10 +25,7 @@ export default function CartCard({
   return (
     <div className={s.cart_card}>
       <div className={s.left_block}>
-        <img
-          src={`https://project-backend1-jw2u.onrender.com${image}`}
-          alt={title}
-        />
+        <img src={`http://localhost:3333${image}`} alt={title} />
         <div className={s.info_block}>
           <p className={s.title}>{title}</p>
           <div className={s.card_button}>

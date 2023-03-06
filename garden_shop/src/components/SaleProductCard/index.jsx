@@ -23,10 +23,7 @@ export default function SaleProductCard({
     <div className={s.product_card}>
       <div className={s.product_card_block}>
         <Link to={`/products/${id}`}>
-          <img
-            src={`https://project-backend1-jw2u.onrender.com${image}`}
-            alt={title}
-          />
+          <img src={`http://localhost:3333${image}`} alt={title} />
         </Link>
         <button onClick={add_to_card}>Add to card</button>
       </div>

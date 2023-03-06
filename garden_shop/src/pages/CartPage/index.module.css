@@ -70,7 +70,8 @@
     border-radius: 15px;
     width: 446px;
     height: 76px; 
-    text-align: center;  
+    text-align: center; 
+    font-size: 25px; 
 }
 
 .letest_block button {
