@@ -1,0 +1,65 @@
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    height: 371px;
+}
+
+.contacts_container {
+    text-align: start;
+    margin: 48px 0 10px 25px;
+}
+
+.contacts_container h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 24px 0;
+    
+}
+
+.contacts_container p {
+    font-weight: 600;
+    font-size: 70px;
+    margin: 24px 0;
+}
+
+.icons_container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 68px;
+    font-size: 50px;
+    color: green;
+    margin: 24px 0;
+    cursor: pointer;
+}
+
+.address_block {
+    width: 564px ;
+    text-align: start;
+    margin: 48px 30px 10px 25px;
+}
+
+.address_block h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 24px 0;
+}
+
+.address_block h3 {
+    font-weight: 600;
+    font-size: 40px;
+    margin: 24px 0;
+
+}
+
+.address_block h4 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 24px 0 5px;
+}
+
+.address_block p {
+    font-weight: 600;
+    font-size: 24px;
+}

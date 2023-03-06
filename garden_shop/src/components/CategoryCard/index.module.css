@@ -1,0 +1,20 @@
+.category_card {
+    color: black;
+    text-decoration: none;
+}
+
+.card img {
+    width: 318px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card p {
+    margin: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    
+}
+

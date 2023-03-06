@@ -1,0 +1,14 @@
+.products_page h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 70px 0 80px 25px;
+
+}
+
+.products_cards {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr );
+    gap: 33px;
+    row-gap: 80px;
+    margin: 0 0 100px 25px;
+}
